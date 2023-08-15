@@ -47,4 +47,8 @@ addDrug(compname:string, molucularfor:string, structure:string, molucularwt:stri
   const myurl = `${this.searchDrugurl}/${id}`;
   return this.http.get(myurl);
   }
+
+  validate(){
+    return true;
+  }
 }

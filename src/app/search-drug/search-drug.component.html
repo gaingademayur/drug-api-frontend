@@ -1,1 +1,49 @@
 <p>search-drug works!</p>
+<div class="col-sm-3"></div>
+<div class="col-sm-3">
+<h2 style="width: 100%;">Drug Info!</h2>
+<select [(ngModel)]="selectedId" style="width: 100%;">
+  <option *ngFor="let item of drugData" [value]="item.id">{{ item.compname }}</option>
+</select>
+<br>
+<br>
+<button (click)="onButtonClick()" type="button" class="btn btn-primary" style="width: 100%;">Submit</button>
+<br>
+<br>
+<a style="width: 100%; justify-content: center;  display: flex;" routerLink="/add-data">Click to add new drug</a>
+<router-outlet></router-outlet>
+<br>
+
+</div>
+<div class="col-sm-3">
+  <br>
+<span [(ngModel)]="selectedId" style="width: 100%;">
+  <option *ngFor="let item of searchData">id: {{ item.id }}</option>
+  <option *ngFor="let item of searchData">component Name: {{ item.compname }}</option>
+  <option *ngFor="let item of searchData">Molucular Formula: {{ item.molucularfor }}</option>
+  <option *ngFor="let item of searchData">Structure: {{ item.structure }}</option>
+  <option *ngFor="let item of searchData">Molucular Weight: {{ item.molucularwt }}</option>
+  <option *ngFor="let item of searchData">Smile: {{ item.smile }}</option>
+  <option *ngFor="let item of searchData">Physochemical Properties: {{ item.phycheproperties }}</option>
+  <option *ngFor="let item of searchData">Genus: {{ item.genus }}</option>
+  <option *ngFor="let item of searchData">Species Name: {{ item.speciesname }}</option>
+  <option *ngFor="let item of searchData">Family: {{ item.family }}</option>
+  <option *ngFor="let item of searchData">Geographycal Location{{ item.geolocation }}</option>
+  <option *ngFor="let item of searchData">Chemical Classification: {{ item.chemicalclassification }}</option>
+  <option *ngFor="let item of searchData">Melting Point: {{ item.meltingpoint }}</option>
+  <option *ngFor="let item of searchData">Mass Spectra: {{ item.massspectra }}</option>
+
+  <option *ngFor="let item of searchData">MSMS: {{ item.msms }}</option>
+  <option *ngFor="let item of searchData">UV: {{ item.uv }}</option>
+  <option *ngFor="let item of searchData">IR Spector: {{ item.irspector }}</option>
+  <option *ngFor="let item of searchData">HMNR: {{ item.hmnr }}</option>
+  <option *ngFor="let item of searchData">CMNR: {{ item.cmnr }}</option>
+  <option *ngFor="let item of searchData">HPLC: {{ item.hplc }}</option>
+  <option *ngFor="let item of searchData">Activity: {{ item.activity }}</option>
+  <option *ngFor="let item of searchData">Toxicity: {{ item.toxicity }}</option>
+  <option *ngFor="let item of searchData">Clinical Trial: {{ item.clinicaltrial }}</option>
+  <option *ngFor="let item of searchData">AFI: {{ item.afi }}</option>
+  <option *ngFor="let item of searchData">Reference: {{ item.reference }}</option>
+
+</span>
+</div>

@@ -8,24 +8,30 @@ import { AddDrugComponent } from './add-drug/add-drug.component';
 import { SearchDrugComponent } from './search-drug/search-drug.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './service/auth.guard';
+import { SearchComponent } from './search/search.component';
 
-const routes: Routes = [
-  // Define your routes here
-  { path: 'add-data', component: AddDrugComponent },
-];
+// const routes: Routes = [
+//   // Define your routes here
+//   { path: 'login', component: LoginComponent},
+//   { path: 'add-data', component: AddDrugComponent, canActivate: [AuthGuard] }  
+// ];
 
 @NgModule({
   declarations: [
     AppComponent,
     AddDrugComponent,
-    SearchDrugComponent
+    SearchDrugComponent,
+    LoginComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    // RouterModule.forRoot(routes)
   ],
   exports: [
     RouterModule
