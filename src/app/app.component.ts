@@ -9,7 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+  
 
   // addDrug(){
   //   this.drugDataService.addDrug(this.newName, this.newCity, this.newGender, this.newPassword).subscribe((data) => {

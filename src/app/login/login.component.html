@@ -1,7 +1,9 @@
 <p>login works!</p>
 
-<input type="text" [(ngModel)]="username" placeholder="username">
+<input type="text" [(ngModel)]="username" placeholder="username">{{username}}
 <br>
 <input type="password" [(ngModel)]="password" placeholder="password">
 <br>
 <input type="submit" (click)="login()">
+
+<input type="submit" (click)="start()" value="observable">{{value2}}

@@ -3,7 +3,7 @@ import { DrugDataService } from '../service/drug-data.service';
 
 
 @Component({
-  selector: 'app-search-drug',
+  selector: 'app-search-drug-test1',
   templateUrl: './search-drug.component.html',
   styleUrls: ['./search-drug.component.css']
 })

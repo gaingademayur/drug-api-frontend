@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './service/auth.guard';
 import { SearchComponent } from './search/search.component';
+import { LayoutComponent } from './layout/layout.component';
 
 // const routes: Routes = [
 //   // Define your routes here
@@ -24,7 +25,8 @@ import { SearchComponent } from './search/search.component';
     AddDrugComponent,
     SearchDrugComponent,
     LoginComponent,
-    SearchComponent
+    SearchComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

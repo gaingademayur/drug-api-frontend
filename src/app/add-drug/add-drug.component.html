@@ -1,4 +1,6 @@
 <router-outlet></router-outlet>
+<input type="submit" value="get ph value" (click)="getPh()">
+<h2>ph: {{phValue}}</h2>
 <h2 style="width: 99%;">Add New Drug!</h2>
 <input style="width: 100%;" type="text" [(ngModel)]="compname" placeholder="Compound Name"><br><br>
 <input style="width: 100%;" type="text" [(ngModel)]="molucularfor" placeholder="Molucular Formula"><br><br>
@@ -25,3 +27,4 @@
 <input style="width: 100%;" type="text" [(ngModel)]="afi" placeholder="AFI"><br><br>
 <input style="width: 100%;" type="text" [(ngModel)]="reference" placeholder="Reference"><br><br>
 <button type="submit" type="button" class="btn btn-primary" (click)="addDrug()" style="width: 100%;"> Add Drug</button>
+
